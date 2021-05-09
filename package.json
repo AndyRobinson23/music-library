@@ -1,0 +1,22 @@
+{
+  "name": "music-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyRobinson23/music-library.git"
+  },
+  "author": "Andrew Robinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndyRobinson23/music-library/issues"
+  },
+  "homepage": "https://github.com/AndyRobinson23/music-library#readme",
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  }
+}
