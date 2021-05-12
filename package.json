@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "mocha tests/**/*.js --exit --recursive --timeout 60000 --file ./tests/test-setup.js",
+    "pretest": "node utils/create-database.js test",
+    "posttest": "node utils/drop-database.js",
     "prestart": "node utils/create-database.js",
     "start": "nodemon -r dotenv/config index.js"
   },
@@ -18,9 +21,12 @@
   },
   "homepage": "https://github.com/AndyRobinson23/music-library#readme",
   "devDependencies": {
+    "chai": "^4.3.4",
     "dotenv": "^9.0.2",
     "eslint": "^7.26.0",
-    "nodemon": "^2.0.7"
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
   },
   "dependencies": {
     "express": "^4.17.1",
